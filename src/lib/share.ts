@@ -18,7 +18,7 @@ export const shareStatus = (
   handleShareToClipboard: () => void
 ) => {
   const textToShare =
-    `${"Yu-Gi-Oh! Wordle - http://www.ygordle.com"} ${solutionIndex} ${
+    `${"Yu-Gi-Oh! Wordle - https://ygo-wordle.vercel.app.com"} ${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
     generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
